@@ -46,7 +46,7 @@ const update = catchError(async (req, res) => {
     { where: { id: id }, returning: true }
   );
   // Operaciones...
-  return res.json(users);
+  return res.json(users[1][0]);
 });
 
 module.exports = {
